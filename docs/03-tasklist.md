@@ -1,23 +1,25 @@
 # Tasklist de Lançamento — Outloop
 
+> **Status (atualizado):** empresa aberta e contador contratado ✔ · landing page da campanha construída em código (pasta `/site`) ✔ · kit de WhatsApp, proposta-modelo, minuta de contrato e planilha de CRM prontos (pasta `/operacional`) ✔ — próximos passos: publicar o site no domínio, configurar WhatsApp Business e Meta Pixel.
+
 Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automação, sites e sistemas sob medida para PMEs de Ribeirão Preto e região). Marque cada item apenas quando estiver **feito e verificável** (documento salvo, conta ativa, campanha publicada, etc.). Prazos são alvo a partir da data de início — se atrasar uma fase, não pule etapas: as fases 0–2 são pré-requisito para ligar tráfego.
 
 ---
 
 ## Esta semana — as 10 primeiras tarefas, na ordem exata
 
-1. - [ ] Contratar contabilidade online (Contabilizei ~R$ 195/mês ou Agilize ~R$ 259/mês) e iniciar abertura da **SLU/ME no Simples Nacional** com CNAE principal 6201-5/01 — abertura leva de 1 a 3 semanas, então é o primeiro clique do projeto.
-2. - [ ] Pedir ao contador a simulação do **Fator R** (pró-labore ≈ 28% do faturamento para cair no Anexo III, alíquota inicial de 6% em vez de 15,5%).
-3. - [ ] Configurar o **WhatsApp Business** no número comercial da Outloop: perfil completo, catálogo com os 3 serviços, mensagem de saudação e 6 respostas rápidas (ver Fase 0).
-4. - [ ] Definir a identidade visual mínima: logo simples, paleta de 2–3 cores e 2 fontes, salvos em um arquivo de referência único (`brand-outloop`).
-5. - [ ] Escrever a **página institucional da Outloop** no domínio próprio (estrutura na Fase 1) e publicar a v1 — feito é melhor que perfeito.
-6. - [ ] Publicar a **landing page da campanha** com botão de WhatsApp acima da dobra e mensagem pré-preenchida "Quero o diagnóstico gratuito de automação".
-7. - [ ] Instalar **Meta Pixel + API de Conversões, Google Tag e GA4 via Google Tag Manager** no site e na landing, e testar os eventos (clique no botão de WhatsApp disparando conversão).
+1. - [ ] Configurar o **WhatsApp Business** no número comercial da Outloop: perfil, saudação, respostas rápidas e as 8 etiquetas — todos os textos prontos para colar em `operacional/whatsapp-kit.md`.
+2. - [ ] Definir a identidade visual mínima: logo simples e 2 fontes — a paleta oficial já está fixada em `docs/06` (azul-noite `#0A1826` + verde-loop `#2EE6A0`); salvar tudo em um arquivo de referência único (`brand-outloop`).
+3. - [ ] Abrir **conta PJ digital** (Asaas, Inter PJ ou similar) e configurar a ferramenta de cobrança (Asaas: Pix, boleto e recorrência) — criar os planos de mensalidade como cobranças recorrentes desde já.
+4. - [ ] Validar com o contador o credenciamento de **NFS-e em Ribeirão Preto** (certificado A1 + ISS.Net) e emitir uma NF de teste.
+5. - [ ] Enviar a minuta `operacional/contrato-modelo.md` para **uma revisão única de advogado** e congelar a versão 1.0.
+6. - [ ] Preencher os placeholders da **landing page pronta** (checklist em `site/README.md`: número do WhatsApp, CNPJ, foto do fundador) e publicar na Vercel apontando o domínio — a landing pode ser o site v1 na raiz do domínio.
+7. - [ ] Instalar **Meta Pixel + GA4 via Google Tag Manager** na landing (blocos já preparados no código) e testar o evento de clique no WhatsApp de ponta a ponta.
 8. - [ ] Criar o **Google Business Profile** da Outloop em Ribeirão Preto e enviar a verificação.
 9. - [ ] Escrever os 3 **estudos de caso do portfólio** (sistemas da Lokok + projetos pessoais), com autorização por escrito da Lokok para citar nome e números.
-10. - [ ] Redigir o **script de qualificação do WhatsApp** (4 perguntas) e o **roteiro do diagnóstico gratuito de 30 min**, e ensaiar os dois em voz alta uma vez.
+10. - [ ] Ensaiar em voz alta o **script de qualificação** e o **roteiro do diagnóstico gratuito** (prontos em `operacional/whatsapp-kit.md` e `docs/07`).
 
-> Regra da semana: nada de tráfego pago antes de os itens 3, 6, 7 e 10 estarem prontos. Anúncio sem funil atrás só queima verba.
+> Regra da semana: nada de tráfego pago antes de os itens 1, 6, 7 e 10 estarem prontos. Anúncio sem funil atrás só queima verba.
 
 ---
 
@@ -25,9 +27,9 @@ Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automaç�
 
 ### Formalização
 
-- [ ] Contratar contabilidade online e assinar a proposta de abertura da empresa (abertura de graça nos planos padrão; pagam-se só as taxas públicas — custo total típico de R$ 500 a R$ 3.000).
-- [ ] Abrir **SLU (Sociedade Limitada Unipessoal) enquadrada como ME**, optante do Simples Nacional — **não abrir MEI**: desenvolvimento de software (CNAEs 6201/6204) não é atividade permitida ao MEI e o teto de R$ 81 mil/ano travaria o crescimento.
-- [ ] Registrar CNAE principal **6201-5/01** (desenvolvimento de programas sob encomenda) e secundários **6204-0/00** (consultoria em TI), **6202-3/00** (programas customizáveis) e **6209-1/00** (suporte técnico).
+- [x] Contratar contabilidade online e assinar a proposta de abertura da empresa. *(já feito — empresa aberta e contador contratado)*
+- [x] Abrir a empresa optante do Simples Nacional. *(já feito — empresa aberta e contador contratado)*
+- [x] Registrar os CNAEs adequados. *(já feito — conferir com o contador se o CNAE principal é o 6201-5/01 e se há os secundários 6204-0/00, 6202-3/00 e 6209-1/00; ajustar é simples se precisar)*
 - [ ] Definir com o contador o valor do pró-labore para atingir **Fator R ≥ 28%** (Anexo III), já considerando os 11% de INSS e eventual IRPF na conta líquida.
 - [ ] Abrir **conta PJ digital** assim que sair o CNPJ (Asaas, Inter PJ ou similar) e separar 100% das finanças da empresa das pessoais.
 - [ ] Comprar **certificado digital A1** (faixa típica de R$ 150–300/ano) após obter CNPJ e inscrição municipal.
@@ -37,10 +39,10 @@ Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automaç�
 
 ### Contrato-modelo
 
-- [ ] Redigir o contrato-modelo de prestação de serviços com as cláusulas essenciais: escopo com critérios de aceite por entrega, cronograma com marcos, pagamento vinculado a marcos, **propriedade intelectual** (pela Lei 9.609/98 o software encomendado pertence ao contratante — incluir cláusula expressa reservando bibliotecas, templates e componentes próprios da Outloop), confidencialidade, **LGPD** (Outloop como operadora de dados), garantia pós-entrega delimitada, SLA de suporte, limitação de responsabilidade e rescisão com multa.
-- [ ] Incluir cláusula de **repasse de custos variáveis**: API de IA (OpenAI/Anthropic), WhatsApp Business API (cobrada por template desde 2025) e VPS ficam na conta do cliente ou são reembolsados com margem administrativa de 15–20% — nunca absorvidos no preço fixo.
+- [x] Redigir o contrato-modelo de prestação de serviços com as cláusulas essenciais. *(minuta completa pronta em `operacional/contrato-modelo.md` — escopo/aceite, marcos, pagamento, PI com reserva de componentes próprios, confidencialidade, LGPD, garantia, SLA, limitação de responsabilidade, rescisão e foro)*
+- [x] Incluir cláusula de **repasse de custos variáveis** (API de IA, WhatsApp Business API, VPS). *(incluída — cláusula 4.3 da minuta)*
 - [ ] Pagar **uma revisão única de advogado** no contrato-modelo e congelar a versão 1.0 para reaproveitar em todos os projetos.
-- [ ] Criar o anexo padrão de **entrega de documentação e credenciais** ao cliente (mata a objeção do "e se o Pedro sumir?" — bus factor 1).
+- [x] Criar o anexo padrão de **entrega de documentação e credenciais** ao cliente. *(coberto pelas cláusulas 5.1 e 12.4 e pelo Anexo de Escopo da minuta)*
 
 ### Identidade visual mínima
 
@@ -56,7 +58,7 @@ Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automaç�
 - [ ] Criar **etiquetas** de funil espelhando o pipeline canônico do CRM: Lead novo, Qualificado, Diagnóstico agendado, Diagnóstico feito, Proposta enviada, Fechado, Perdido, Indicação/Parceiro.
 - [ ] Gerar links **wa.me distintos por canal** (site, landing, Instagram, Google Business, prospecção) com mensagens pré-preenchidas diferentes, para atribuir origem de cada lead.
 
-**Critério de saída da Fase 0:** empresa em abertura, contrato-modelo v1.0 salvo, WhatsApp pronto para receber lead hoje.
+**Critério de saída da Fase 0:** empresa aberta ✔ (feito), contrato-modelo v1.0 salvo, WhatsApp pronto para receber lead hoje.
 
 ---
 
@@ -71,10 +73,10 @@ Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automaç�
 
 ### Landing page da campanha
 
-- [ ] Construir a landing com a estrutura de 6 blocos que converte em B2B: **(1)** hero com dor + promessa específica + botão de WhatsApp acima da dobra; **(2)** as 3 dores que a Outloop resolve (tempo perdido em tarefa manual, cliente sem resposta no WhatsApp, planilha/caderno como "sistema"); **(3)** como funciona em 3 passos (diagnóstico gratuito → plano → implementação); **(4)** prova social com números dos estudos de caso; **(5)** FAQ com objeções (preço, prazo, "preciso trocar meu sistema?", "e se você sumir?"); **(6)** CTA final.
-- [ ] Remover menu de navegação e links externos da landing (uma página, uma ação).
-- [ ] Usar **botão de WhatsApp com mensagem pré-preenchida** ("Quero o diagnóstico gratuito de automação") como CTA principal — no Brasil, empresas com WhatsApp como canal convertem ~24% mais (estimativa de mercado; validar com nossos dados); se houver formulário, no máximo nome + WhatsApp + principal desafio.
-- [ ] Descrever a oferta de entrada com escopo explícito: **"Diagnóstico gratuito de automação (30 min): mapeamos seus 3 maiores gargalos e você recebe um plano com estimativa de horas economizadas"** — com entregável concreto, não "call de vendas disfarçada".
+- [x] Construir a landing com a estrutura completa (hero, dores, serviços, como funciona, prova, fundador, FAQ, CTA final). *(construída — `site/index.html`, com a copy do docs/04; falta publicar no domínio e preencher os placeholders do `site/README.md`)*
+- [x] Remover menu de navegação e links externos da landing (uma página, uma ação). *(feito na página construída)*
+- [x] Usar **botão de WhatsApp com mensagem pré-preenchida** como CTA principal, com token `#origem` por seção. *(feito — todos os botões configuráveis num único lugar do código)*
+- [x] Descrever a oferta de entrada com escopo explícito: **"Diagnóstico gratuito de automação (30 min): mapeamos seus 3 maiores gargalos e você sai com um plano por escrito"**. *(feito — seção "Como funciona" da página)*
 
 ### Rastreamento (antes de qualquer anúncio)
 
@@ -111,27 +113,27 @@ Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automaç�
 
 ### CRM
 
-- [ ] Configurar CRM gratuito (HubSpot free ou planilha estruturada) com as etapas: Lead novo → Qualificado → Diagnóstico agendado → Diagnóstico feito → Proposta enviada → Fechado / Perdido, mais a etiqueta extra "Indicação/Parceiro".
+- [ ] Configurar CRM gratuito (HubSpot free ou planilha estruturada) com as etapas: Lead novo → Qualificado → Diagnóstico agendado → Diagnóstico feito → Proposta enviada → Fechado / Perdido, mais a etiqueta extra "Indicação/Parceiro". *(planilha inicial pronta em `operacional/crm-pipeline.csv` — importar no Google Sheets ou migrar para o HubSpot free antes dos 10 primeiros leads)*
 - [ ] Registrar em cada lead: origem (UTM/link wa.me), nicho, tamanho da empresa, dor principal e próximo passo com data.
 - [ ] Definir as 3 métricas de funil a acompanhar desde o lead nº 1: **conversa → diagnóstico** (meta: 20–40%), **diagnóstico → proposta**, **proposta → fechamento** (referência de mercado: 15–25% das oportunidades) — ou seja, planejar ~15–40 conversas iniciadas por cliente fechado.
 
 ### Script de qualificação no WhatsApp
 
-- [ ] Finalizar o script de 4 perguntas: saudação citando a origem ("Vi que você veio pelo anúncio…") → segmento → tamanho da empresa/volume → dor principal ("qual é a tarefa manual ou gargalo que mais toma seu tempo hoje?") → urgência e quem decide.
-- [ ] Fechar o script **sempre oferecendo 2 horários concretos** para o diagnóstico (nunca "qualquer dia fica bom").
+- [x] Finalizar o script de 4 perguntas: saudação citando a origem → segmento → tamanho/volume → dor principal → urgência e quem decide. *(pronto — `operacional/whatsapp-kit.md`, seção 5)*
+- [x] Fechar o script **sempre oferecendo 2 horários concretos** para o diagnóstico. *(incluído no script pronto)*
 - [ ] Salvar o script como respostas rápidas no WhatsApp Business para responder em segundos.
 - [ ] Definir critério de lead qualificado (empresa com CNPJ ativo, dor clara, decisor na conversa) e o que fazer com desqualificados (etiqueta "futuro" + conteúdo do Instagram).
 
 ### Roteiro do diagnóstico gratuito (30 min)
 
-- [ ] Escrever o roteiro em blocos: 5 min contexto do negócio → 15 min mapeamento dos 3 maiores gargalos (quem faz, quanto tempo toma, o que acontece quando falha) → 5 min estimativa de horas/mês desperdiçadas → 5 min próximos passos e prazo da proposta.
+- [x] Escrever o roteiro em blocos: contexto → mapeamento dos 3 maiores gargalos → estimativa de horas → próximos passos. *(roteiro minuto a minuto pronto em `docs/07`, seção 3.2)*
 - [ ] Criar o **entregável padrão**: mini-relatório em PDF (1–2 páginas) com os 3 gargalos, estimativa de horas economizadas e recomendação — enviado em até 48h após a reunião.
 - [ ] Incluir no roteiro a frase de prova viva: "essa resposta rápida e organizada que você recebeu no WhatsApp é exatamente o que eu monto para a sua empresa".
 - [ ] Só recomendar automação de processo que **já funciona manualmente** — se o processo do cliente é bagunçado, a proposta inclui a etapa de arrumar o processo (isso justifica o setup fee e evita projeto fracassado).
 
 ### Template de proposta comercial
 
-- [ ] Criar template de proposta de 1–2 páginas: resumo do diagnóstico → solução proposta → escopo e prazo → investimento → garantia → próximos passos.
+- [x] Criar template de proposta de 1–2 páginas: resumo do diagnóstico → solução proposta → escopo e prazo → investimento → garantia → próximos passos. *(pronto — `operacional/proposta-modelo.md`, com anexo interno de preços de referência)*
 - [ ] Fixar a tabela de preços de referência (camada "resultado", não "commodity"; ajustar por escopo, manter coerência):
   - Automação/atendente IA no WhatsApp: **Essencial R$ 2.500 de setup + R$ 400/mês**, **Operação (atendente IA no WhatsApp) R$ 6.000 + R$ 800/mês**, **Escala R$ 10.000 + R$ 1.400/mês** (abaixo das agências grandes de R$ 8–20 mil + R$ 1,5–3 mil/mês, bem acima do freelancer avulso).
   - Sites: **R$ 4.500** (institucional) / landing page **R$ 2.200 (valor fechado)**, sempre com plano de manutenção/hospedagem de **R$ 200–400/mês** embutido na oferta.

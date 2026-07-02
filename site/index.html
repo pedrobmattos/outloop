@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outloop | Automação, sites e sistemas para sua empresa</title>
+  <meta name="description" content="Pare com tarefas repetitivas. Automação no WhatsApp, sites profissionais e sistemas sob medida para PMEs de Ribeirão Preto. Diagnóstico gratuito de 30 min.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Automatize sua empresa. Pare com tarefas repetitivas.">
+  <meta property="og:description" content="Automação no WhatsApp, sites profissionais e sistemas sob medida para PMEs de Ribeirão Preto. Diagnóstico gratuito de 30 min.">
+  <meta property="og:url" content="https://SEUDOMINIO"><!-- TODO: trocar pelo domínio real -->
+  <meta property="og:image" content="https://SEUDOMINIO/og-image.jpg"><!-- TODO: gerar no SuperGrok, 1200x630, "Automatize sua empresa" -->
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       RASTREAMENTO — instalar ANTES do primeiro real de mídia.
+       1) Crie o contêiner no Google Tag Manager (tagmanager.google.com)
+       2) Troque GTM-XXXXXXX abaixo pelo ID real e descomente o bloco
+       3) Dentro do GTM: Meta Pixel + GA4 (ver site/README.md)
+  ============================================================ -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <!-- FAQ dados estruturados (schema FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Quanto custa?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do escopo — e você sabe o preço exato antes de fechar, no diagnóstico gratuito. Como referência: landing pages a partir de R$ 2,2 mil (projeto fechado) e sites institucionais tipicamente entre R$ 3 mil e R$ 6 mil. Automações simples têm implantação a partir de R$ 2,5 mil + mensalidade de R$ 400; com atendente IA no WhatsApp, implantação a partir de R$ 6 mil + mensalidade a partir de R$ 800. Sistemas sob medida partem de R$ 8 mil, conforme o escopo."}},
+      {"@type": "Question", "name": "Em quanto tempo fica pronto?", "acceptedAnswer": {"@type": "Answer", "text": "Landing pages: 7 dias úteis após aprovação do conteúdo. Sites institucionais: 3 a 4 semanas. Automações de atendimento no WhatsApp: 3 a 4 semanas da assinatura até entrar em produção. Sistemas sob medida: definido por escopo, com entregas parciais ao longo do caminho. Todo prazo vai por escrito na proposta."}},
+      {"@type": "Question", "name": "Eu não entendo nada de tecnologia. Isso é problema?", "acceptedAnswer": {"@type": "Answer", "text": "Nenhum. Você não precisa entender de tecnologia — precisa entender do seu negócio. No diagnóstico falamos de tarefas, horas e clientes, não de servidores e APIs. Depois da entrega, você e sua equipe recebem treinamento prático e um material simples de consulta."}},
+      {"@type": "Question", "name": "E depois da entrega? Vou ficar na mão?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Automações incluem mensalidade justamente para isso: monitoramento, correções e melhorias contínuas, com prazo de resposta definido em contrato. Nos primeiros 90 dias fazemos revisões mensais. Sites e sistemas têm garantia pós-entrega e plano de manutenção opcional. Você recebe documentação e acessos de tudo."}},
+      {"@type": "Question", "name": "Tem contrato? Tem fidelidade?", "acceptedAnswer": {"@type": "Answer", "text": "Todo projeto tem contrato — com escopo detalhado, prazos, critérios de aceite, propriedade intelectual e prazo de resposta de suporte. Mensalidades de automação têm ciclo mínimo de 3 meses; depois disso, você cancela com aviso de 30 dias, sem multa."}},
+      {"@type": "Question", "name": "E a LGPD? Meus dados e os dos meus clientes ficam seguros?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, e isso vai no contrato: cláusula específica de LGPD (Lei 13.709/2018) definindo a Outloop como operadora dos dados, com confidencialidade, medidas de segurança e regras claras. Os dados são da sua empresa; a Outloop só os trata para fazer o sistema funcionar."}}
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --azul-noite: #0A1826;
+      --azul-noite-2: #0F2236;
+      --verde-loop: #2EE6A0;
+      --verde-escuro: #1FB87E;
+      --branco-gelo: #F4F7F9;
+      --grafite: #3A4654;
+      --ambar: #FFB84D;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(10, 24, 38, .12);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--grafite);
+      background: var(--branco-gelo);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3 { color: var(--azul-noite); line-height: 1.2; letter-spacing: -.02em; }
+    h2 { font-size: clamp(1.6rem, 4.5vw, 2.4rem); font-weight: 800; margin-bottom: .75rem; }
+    .section { padding: 4.5rem 1.25rem; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    .section-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; }
+
+    /* ===== Botões ===== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      background: var(--verde-loop); color: var(--azul-noite);
+      font-weight: 800; font-size: 1.05rem; text-decoration: none;
+      padding: 1rem 1.75rem; border-radius: 999px; border: none; cursor: pointer;
+      box-shadow: 0 6px 20px rgba(46, 230, 160, .35);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(46, 230, 160, .45); }
+    .btn-sm { font-size: .95rem; padding: .7rem 1.3rem; box-shadow: none; }
+    .btn-ghost { background: transparent; color: var(--verde-loop); border: 2px solid var(--verde-loop); box-shadow: none; }
+    .microcopy { font-size: .85rem; opacity: .75; margin-top: .75rem; }
+
+    /* ===== Header ===== */
+    header {
+      background: var(--azul-noite); padding: 1rem 1.25rem;
+      display: flex; justify-content: center;
+    }
+    .logo { display: inline-flex; align-items: center; gap: .5rem; color: var(--branco-gelo); font-weight: 800; font-size: 1.35rem; letter-spacing: -.02em; }
+    .logo svg { display: block; }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: radial-gradient(1200px 600px at 80% -10%, #14324e 0%, var(--azul-noite) 55%);
+      color: var(--branco-gelo);
+      padding: 4rem 1.25rem 5rem;
+    }
+    .hero .container { display: grid; grid-template-columns: 1.15fr .85fr; gap: 3rem; align-items: center; }
+    .hero h1 { color: #fff; font-size: clamp(2rem, 5.5vw, 3.2rem); font-weight: 800; margin-bottom: 1.25rem; }
+    .hero h1 .hl { color: var(--verde-loop); }
+    .hero p.sub { font-size: 1.15rem; opacity: .9; margin-bottom: 2rem; max-width: 34rem; }
+    .badge-local {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: rgba(46, 230, 160, .12); color: var(--verde-loop);
+      border: 1px solid rgba(46, 230, 160, .35);
+      font-size: .8rem; font-weight: 600; padding: .35rem .85rem; border-radius: 999px; margin-bottom: 1.5rem;
+    }
+    .hero .microcopy { color: var(--branco-gelo); }
+
+    /* Chat mockup (vitrine do atendente IA — sem imagem, carrega instantâneo) */
+    .chat-card {
+      background: #fff; border-radius: 18px; box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      overflow: hidden; max-width: 360px; margin-left: auto;
+    }
+    .chat-head { background: #075E54; color: #fff; padding: .8rem 1rem; display: flex; align-items: center; gap: .6rem; font-size: .9rem; font-weight: 600; }
+    .chat-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--verde-loop); color: var(--azul-noite); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .8rem; }
+    .chat-head small { display: block; font-weight: 400; opacity: .8; font-size: .72rem; }
+    .chat-body { background: #E5DDD5; padding: 1rem; display: flex; flex-direction: column; gap: .6rem; min-height: 240px; }
+    .msg { max-width: 85%; padding: .55rem .8rem; border-radius: 10px; font-size: .85rem; line-height: 1.45; box-shadow: 0 1px 1px rgba(0,0,0,.1); position: relative; }
+    .msg time { display: block; font-size: .62rem; opacity: .55; text-align: right; margin-top: .15rem; }
+    .msg.in { background: #fff; align-self: flex-start; border-top-left-radius: 2px; }
+    .msg.out { background: #DCF8C6; align-self: flex-end; border-top-right-radius: 2px; }
+    .chat-note { background: var(--azul-noite); color: var(--branco-gelo); font-size: .78rem; padding: .7rem 1rem; text-align: center; }
+    .chat-note b { color: var(--verde-loop); }
+
+    /* ===== Dores ===== */
+    .dores { background: #fff; }
+    .dores-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+    .dor {
+      display: flex; gap: .75rem; align-items: flex-start;
+      background: var(--branco-gelo); border-left: 4px solid var(--ambar);
+      padding: 1rem 1.25rem; border-radius: 10px; font-size: .98rem;
+    }
+    .dor .check { color: var(--ambar); font-weight: 800; flex-shrink: 0; }
+    .dores-fechamento { text-align: center; font-size: 1.15rem; font-weight: 600; color: var(--azul-noite); }
+    .dores-fechamento b { color: var(--verde-escuro); }
+
+    /* ===== Serviços ===== */
+    .servicos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .card {
+      background: #fff; border-radius: var(--radius); padding: 2rem 1.75rem;
+      box-shadow: var(--shadow); display: flex; flex-direction: column;
+      border-top: 4px solid var(--verde-loop);
+    }
+    .card h3 { font-size: 1.2rem; margin-bottom: .75rem; }
+    .card p { margin-bottom: 1rem; font-size: .95rem; }
+    .card ul { list-style: none; margin-bottom: 1rem; flex-grow: 1; }
+    .card li { font-size: .9rem; padding: .35rem 0 .35rem 1.5rem; position: relative; }
+    .card li::before { content: "✓"; color: var(--verde-escuro); font-weight: 800; position: absolute; left: 0; }
+    .card .modelo { font-size: .8rem; background: var(--branco-gelo); border-radius: 8px; padding: .5rem .75rem; margin-bottom: 1.25rem; }
+    .card .btn { align-self: flex-start; }
+
+    /* ===== Como funciona ===== */
+    .passos { background: #fff; }
+    .passos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .passo { text-align: left; }
+    .passo .num {
+      width: 44px; height: 44px; border-radius: 50%; background: var(--azul-noite); color: var(--verde-loop);
+      display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.15rem; margin-bottom: 1rem;
+    }
+    .passo h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+    .passo p { font-size: .95rem; }
+    .passos-cta { text-align: center; }
+    .passos-cta p { max-width: 600px; margin: 0 auto 1.5rem; }
+
+    /* ===== Prova ===== */
+    .cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+    .case { background: #fff; border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--shadow); font-size: .93rem; }
+    .case h3 { font-size: 1rem; margin-bottom: .6rem; }
+    .garantia {
+      background: var(--azul-noite); color: var(--branco-gelo);
+      border-radius: var(--radius); padding: 2rem; font-size: 1rem;
+    }
+    .garantia b, .garantia strong { color: var(--verde-loop); }
+
+    /* ===== Fundador ===== */
+    .fundador { background: #fff; }
+    .fundador .container { display: grid; grid-template-columns: 300px 1fr; gap: 3rem; align-items: start; }
+    .foto-placeholder {
+      aspect-ratio: 4/5; border-radius: var(--radius); background: var(--azul-noite-2);
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      color: var(--branco-gelo); font-size: .85rem; padding: 1rem; opacity: .85;
+    }
+    .fundador-bullets { list-style: none; margin: 1.5rem 0; }
+    .fundador-bullets li { padding: .6rem 0 .6rem 1.9rem; position: relative; font-size: .97rem; }
+    .fundador-bullets li::before { content: "→"; color: var(--verde-escuro); font-weight: 800; position: absolute; left: 0; }
+    .fundador-bullets b { color: var(--azul-noite); }
+
+    /* ===== FAQ ===== */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    details {
+      background: #fff; border-radius: 10px; margin-bottom: .75rem;
+      box-shadow: 0 2px 10px rgba(10,24,38,.06); overflow: hidden;
+    }
+    summary {
+      cursor: pointer; font-weight: 700; color: var(--azul-noite); font-size: 1rem;
+      padding: 1.1rem 3rem 1.1rem 1.25rem; list-style: none; position: relative;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+"; position: absolute; right: 1.25rem; top: 50%; transform: translateY(-50%);
+      color: var(--verde-escuro); font-size: 1.4rem; font-weight: 400; transition: transform .2s;
+    }
+    details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    details .resp { padding: 0 1.25rem 1.25rem; font-size: .95rem; }
+
+    /* ===== CTA final ===== */
+    .cta-final {
+      background: radial-gradient(900px 500px at 50% 120%, #14324e 0%, var(--azul-noite) 60%);
+      color: var(--branco-gelo); text-align: center;
+    }
+    .cta-final h2 { color: #fff; }
+    .cta-final p { max-width: 620px; margin: 0 auto 2rem; opacity: .9; }
+    .cta-final .microcopy { color: var(--branco-gelo); }
+
+    /* ===== Formulário fallback (só aparece se configurar endpoint) ===== */
+    .form-wrap { max-width: 460px; margin: 3.5rem auto 0; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); padding: 2rem; display: none; text-align: left; }
+    .form-wrap.ativo { display: block; }
+    .form-wrap h3 { color: #fff; margin-bottom: 1.25rem; font-size: 1.1rem; text-align: center; }
+    .form-wrap label { display: block; font-size: .85rem; margin-bottom: .3rem; color: var(--branco-gelo); }
+    .form-wrap input, .form-wrap select {
+      width: 100%; padding: .75rem .9rem; border-radius: 8px; border: none;
+      font-family: inherit; font-size: .95rem; margin-bottom: 1rem; background: #fff; color: var(--grafite);
+    }
+    .form-wrap .btn { width: 100%; }
+    .form-msg { font-size: .9rem; color: var(--verde-loop); margin-top: .75rem; text-align: center; display: none; }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #071220; color: rgba(244,247,249,.65);
+      padding: 2rem 1.25rem; text-align: center; font-size: .82rem;
+    }
+    footer .logo { font-size: 1.05rem; margin-bottom: .5rem; }
+    footer a { color: var(--verde-loop); text-decoration: none; }
+    footer p { margin: .25rem 0; }
+
+    /* ===== Botão flutuante ===== */
+    .float-wa {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 99;
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: var(--verde-loop); color: var(--azul-noite);
+      font-weight: 800; font-size: .95rem; text-decoration: none;
+      padding: .85rem 1.35rem; border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(10,24,38,.35);
+      opacity: 0; pointer-events: none; transform: translateY(12px);
+      transition: opacity .25s, transform .25s;
+    }
+    .float-wa.visivel { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 860px) {
+      .section { padding: 3.25rem 1.25rem; }
+      .hero .container { grid-template-columns: 1fr; gap: 2.5rem; }
+      .chat-card { margin: 0 auto; }
+      .dores-grid { grid-template-columns: 1fr; }
+      .servicos-grid, .passos-grid, .cases-grid { grid-template-columns: 1fr; }
+      .fundador .container { grid-template-columns: 1fr; }
+      .foto-placeholder { max-width: 280px; margin: 0 auto; }
+      .btn { width: 100%; }
+      .card .btn, .float-wa { width: auto; }
+    }
+  </style>
+</head>
+<body>
+  <!-- GTM noscript (descomentar junto com o script do head)
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+
+  <header>
+    <span class="logo" aria-label="Outloop">
+      <svg width="30" height="18" viewBox="0 0 30 18" fill="none" aria-hidden="true">
+        <path d="M8 2 C3 2 2 6 2 9 C2 12 3 16 8 16 C13 16 15 11 15 9 C15 7 17 2 22 2 C27 2 28 6 28 9 C28 12 27 16 22 16 C18.5 16 16.8 13.5 16 11.5" stroke="#2EE6A0" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      outloop
+    </span>
+  </header>
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div>
+        <span class="badge-local">📍 Ribeirão Preto - SP</span>
+        <h1>Automatize sua empresa.<br><span class="hl">Pare com tarefas repetitivas.</span></h1>
+        <p class="sub">A Outloop constrói automações, sites e sistemas sob medida para pequenas e médias empresas de Ribeirão Preto e região. Responda clientes em segundos, 24/7 — enquanto você cuida do que realmente importa.</p>
+        <a class="btn" data-wa data-origem="lp-hero" data-secao="hero"
+           data-msg="Olá, Pedro! Vi o site da Outloop e quero o diagnóstico gratuito de automação.">
+          Quero meu diagnóstico gratuito
+        </a>
+        <p class="microcopy">Conversa de 30 minutos pelo WhatsApp ou vídeo. Sem compromisso, sem tecniquês.</p>
+      </div>
+
+      <div class="chat-card" aria-hidden="true">
+        <div class="chat-head">
+          <span class="chat-avatar">OL</span>
+          <span>Sua empresa <small>online agora</small></span>
+        </div>
+        <div class="chat-body">
+          <div class="msg in">Oi! Vocês atendem sábado? Queria agendar um horário 🙏<time>22:47</time></div>
+          <div class="msg out">Olá! Atendemos sim: sábado das 8h às 13h. Tenho <b>9h20</b> ou <b>11h40</b> livres — qual prefere?<time>22:47</time></div>
+          <div class="msg in">11h40! Pode ser<time>22:48</time></div>
+          <div class="msg out">Agendado ✅ Sábado, 11h40. Vou te mandar um lembrete na sexta. Até lá!<time>22:48</time></div>
+        </div>
+        <div class="chat-note">Respondido, agendado e confirmado <b>às 22h47 — sem ninguém no teclado.</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. DORES ============ -->
+  <section class="section dores">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Você ainda faz isso manualmente?</h2>
+      </div>
+      <div class="dores-grid">
+        <div class="dor"><span class="check">✔</span> Responde cliente no WhatsApp às 22h — ou deixa para amanhã e perde a venda.</div>
+        <div class="dor"><span class="check">✔</span> Confirma consulta ou reunião uma a uma, por telefone, todo santo dia.</div>
+        <div class="dor"><span class="check">✔</span> Digita o mesmo dado três vezes: na planilha, no sistema e no WhatsApp.</div>
+        <div class="dor"><span class="check">✔</span> Monta relatório no fim do mês copiando e colando de cinco lugares.</div>
+        <div class="dor"><span class="check">✔</span> Cobra cliente atrasado de cabeça — e às vezes esquece.</div>
+        <div class="dor"><span class="check">✔</span> Demora para responder um lead novo e ele fecha com o concorrente.</div>
+      </div>
+      <p class="dores-fechamento">Cada uma dessas tarefas pode rodar sozinha. <b>É isso que a Outloop faz.</b></p>
+    </div>
+  </section>
+
+  <!-- ============ 3. SERVIÇOS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-intro">
+        <h2>O que a Outloop constrói para a sua empresa</h2>
+      </div>
+      <div class="servicos-grid">
+        <div class="card">
+          <h3>Automação de processos e atendente IA no WhatsApp</h3>
+          <p>Seu WhatsApp responde, qualifica e agenda sozinho — 24 horas por dia, 7 dias por semana. Conectamos seus sistemas, planilhas e cobranças para que os dados andem sozinhos, sem ninguém digitar duas vezes.</p>
+          <ul>
+            <li>Atendente com IA no WhatsApp: responde em segundos, agenda e confirma horários</li>
+            <li>Integrações entre sistemas, planilhas e e-mail (relatórios e cobranças automáticos)</li>
+            <li>Recuperação de conversas paradas e follow-up automático de leads</li>
+          </ul>
+          <p class="modelo"><b>Modelo:</b> implantação + mensalidade (a automação fica monitorada e evoluindo, não é "instala e some").</p>
+          <a class="btn btn-sm" data-wa data-origem="lp-auto" data-secao="card_automacao"
+             data-msg="Olá! Quero automatizar o atendimento da minha empresa. Vi no site da Outloop.">
+            Quero automatizar meu atendimento →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Sites e landing pages que trazem cliente</h3>
+          <p>Um site rápido, bonito e que aparece no Google — feito para transformar visita em conversa no seu WhatsApp. Projeto fechado, entrega rápida, sem mensalidade obrigatória.</p>
+          <ul>
+            <li>Site institucional ou landing page pronta para campanhas de anúncio</li>
+            <li>Carregamento rápido no celular e botão de WhatsApp em todas as seções</li>
+            <li>Textos escritos para vender, não só para "ficar bonito"</li>
+          </ul>
+          <p class="modelo"><b>Modelo:</b> projeto fechado, com plano opcional de manutenção e hospedagem.</p>
+          <a class="btn btn-sm" data-wa data-origem="lp-site" data-secao="card_sites"
+             data-msg="Olá! Quero um orçamento de site/landing page. Vi no site da Outloop.">
+            Quero um site que vende →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Sistemas sob medida para a sua operação</h3>
+          <p>CRM simples, painel de indicadores, portal interno — o sistema que a sua empresa precisa, do jeito que ela funciona. Sem pagar por 200 funções que você nunca vai usar.</p>
+          <ul>
+            <li>CRM enxuto para acompanhar leads e clientes</li>
+            <li>Dashboards com os números do negócio em tempo real</li>
+            <li>Portais internos que substituem a planilha que já não dá conta</li>
+          </ul>
+          <p class="modelo"><b>Modelo:</b> projeto fechado por escopo, com manutenção mensal opcional.</p>
+          <a class="btn btn-sm" data-wa data-origem="lp-sistema" data-secao="card_sistemas"
+             data-msg="Olá! Quero conversar sobre um sistema sob medida. Vi no site da Outloop.">
+            Quero um sistema sob medida →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. COMO FUNCIONA ============ -->
+  <section class="section passos">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Do primeiro "oi" ao plano de automação em 3 passos</h2>
+      </div>
+      <div class="passos-grid">
+        <div class="passo">
+          <div class="num">1</div>
+          <h3>Chame no WhatsApp</h3>
+          <p>Clique no botão, conte em uma frase qual tarefa mais rouba seu tempo. Você fala direto com o Pedro, não com um robô de menu infinito.</p>
+        </div>
+        <div class="passo">
+          <div class="num">2</div>
+          <h3>Conversa rápida de entendimento</h3>
+          <p>Em poucos minutos entendemos seu negócio: segmento, tamanho da equipe, quais ferramentas você já usa. Sem formulário de 20 campos.</p>
+        </div>
+        <div class="passo">
+          <div class="num">3</div>
+          <h3>Diagnóstico gratuito de automação (30 min)</h3>
+          <p>Uma reunião de 30 minutos em que mapeamos seus 3 maiores gargalos e você sai com um plano por escrito: o que automatizar primeiro, quanto tempo isso economiza e quanto custa. É seu, mesmo que não feche nada.</p>
+        </div>
+      </div>
+      <div class="passos-cta">
+        <p>Depois do diagnóstico, se fizer sentido, você recebe uma proposta com escopo, prazo e preço fechados. <b>Sem surpresa no boleto.</b></p>
+        <a class="btn" data-wa data-origem="lp-passos" data-secao="como_funciona"
+           data-msg="Olá, Pedro! Vi o site da Outloop e quero o diagnóstico gratuito de automação.">
+          Agendar meu diagnóstico gratuito
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. PROVA / PORTFÓLIO ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Sistemas que já rodam em produção — todos os dias</h2>
+        <p>A Outloop é nova. O que constrói, não é: são anos de experiência real desenvolvendo sistemas que empresas usam todos os dias — não projetos de gaveta.</p>
+      </div>
+      <div class="cases-grid">
+        <div class="case">
+          <h3>Sistema interno de operação</h3>
+          <p>Uma operação que dependia de planilhas e troca de mensagens passou a rodar em um sistema interno construído sob medida: cadastros, fluxo de trabalho e informação centralizada em um só lugar. O time parou de caçar dado em três lugares diferentes — o sistema está em produção e em uso diário até hoje.</p>
+        </div>
+        <div class="case">
+          <h3>Automação de rotina administrativa</h3>
+          <p>Tarefas que exigiam digitação manual e conferência repetida passaram a rodar de forma automática, com registro de tudo o que acontece. Resultado: menos retrabalho, menos erro humano e uma rotina que não depende de alguém lembrar de fazer.</p>
+        </div>
+        <div class="case">
+          <h3>Projetos próprios em produção</h3>
+          <p>Ferramentas e sistemas desenvolvidos e mantidos pelo próprio Pedro, do banco de dados à tela final — a mesma stack e o mesmo padrão de qualidade usados nos projetos de clientes.</p>
+        </div>
+      </div>
+      <div class="garantia">
+        <b>Compromisso de entrega:</b> todo projeto tem escopo, prazo e critérios de aceite por escrito. Se a automação contratada não entrar em produção em até 30 dias por responsabilidade da Outloop, você escolhe: <strong>reembolso integral da implantação ou continuidade sem custo até a entrega.</strong> E a resposta que você recebeu no nosso WhatsApp em segundos? Foi o nosso próprio sistema trabalhando — você acabou de testar o produto.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. FUNDADOR ============ -->
+  <section class="section fundador">
+    <div class="container">
+      <!-- TODO: trocar o placeholder por foto real do Pedro (ambiente de trabalho, nada de banco de imagem) -->
+      <div class="foto-placeholder">[ Foto real do Pedro<br>no ambiente de trabalho ]</div>
+      <div>
+        <h2>Quem constrói é quem atende</h2>
+        <p>Sou o Pedro, desenvolvedor e fundador da Outloop. Antes de abrir o estúdio, passei anos construindo sistemas que empresas usam em produção todos os dias — do primeiro rascunho à manutenção. Criei a Outloop com uma ideia simples: pequenas e médias empresas de Ribeirão Preto merecem a mesma tecnologia das grandes, sem o preço e a burocracia de uma agência grande.</p>
+        <ul class="fundador-bullets">
+          <li><b>Você fala com quem faz.</b> Aqui não existe vendedor que promete e estagiário que entrega. Quem diagnostica, orça e constrói é a mesma pessoa.</li>
+          <li><b>Menos camada, mais velocidade.</b> Sem gerente de conta no meio do caminho, ajuste que levaria uma semana sai em dias.</li>
+          <li><b>Documentação e acesso são seus.</b> Você recebe as credenciais e a documentação de tudo o que for construído. O sistema é da sua empresa — não fica refém de ninguém, nem de mim.</li>
+        </ul>
+        <a class="btn btn-sm" data-wa data-origem="lp-fundador" data-secao="fundador"
+           data-msg="Olá, Pedro! Vi o site da Outloop e quero o diagnóstico gratuito de automação.">
+          Falar direto com o Pedro →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. FAQ ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Perguntas que todo dono de empresa faz (com razão)</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Quanto custa?</summary>
+          <div class="resp">Depende do escopo — e você sabe o preço exato antes de fechar, no diagnóstico gratuito. Como referência: landing pages a partir de R$ 2,2 mil (projeto fechado) e sites institucionais ficam tipicamente entre R$ 3 mil e R$ 6 mil (projeto fechado). Automações simples têm implantação a partir de R$ 2,5 mil + mensalidade de R$ 400; com atendente IA no WhatsApp, implantação a partir de R$ 6 mil + mensalidade a partir de R$ 800 (que cobre monitoramento, ajustes e evolução). Sistemas sob medida partem de R$ 8 mil, conforme o escopo. Custos variáveis de terceiros (API de IA, WhatsApp oficial, servidor) são transparentes e ficam discriminados na proposta.</div>
+        </details>
+        <details>
+          <summary>Em quanto tempo fica pronto?</summary>
+          <div class="resp">Landing pages: 7 dias úteis após aprovação do conteúdo. Sites institucionais: 3 a 4 semanas. Automações de atendimento no WhatsApp: 3 a 4 semanas da assinatura até entrar em produção. Sistemas sob medida: definido por escopo, com entregas parciais ao longo do caminho — você não espera meses para ver a primeira tela funcionando. Todo prazo vai por escrito na proposta.</div>
+        </details>
+        <details>
+          <summary>Eu não entendo nada de tecnologia. Isso é problema?</summary>
+          <div class="resp">Nenhum. Você não precisa entender de tecnologia — precisa entender do seu negócio, e disso você entende. Eu traduzo tudo para o português: no diagnóstico falamos de tarefas, horas e clientes, não de servidores e APIs. Depois da entrega, você e sua equipe recebem treinamento prático e um material simples de consulta. Se sua equipe sabe usar WhatsApp, sabe usar o que a Outloop entrega.</div>
+        </details>
+        <details>
+          <summary>E depois da entrega? Vou ficar na mão?</summary>
+          <div class="resp">Não. Automações incluem mensalidade justamente para isso: monitoramento, correções e melhorias contínuas, com prazo de resposta definido em contrato. Nos primeiros 90 dias fazemos revisões mensais para garantir que tudo está sendo usado de verdade. Sites e sistemas têm garantia pós-entrega e plano de manutenção opcional. E como você recebe documentação e acessos de tudo, nunca fica refém.</div>
+        </details>
+        <details>
+          <summary>Tem contrato? Tem fidelidade?</summary>
+          <div class="resp">Todo projeto tem contrato — com escopo detalhado, prazos, critérios de aceite, propriedade intelectual (o que é feito para você é seu) e prazo de resposta de suporte. Mensalidades de automação têm ciclo mínimo de 3 meses — o período de estabilização; depois disso, você cancela com aviso de 30 dias, sem multa. A renovação tem que vir do resultado.</div>
+        </details>
+        <details>
+          <summary>E a LGPD? Meus dados e os dos meus clientes ficam seguros?</summary>
+          <div class="resp">Sim, e isso vai no contrato: cláusula específica de LGPD (Lei 13.709/2018) definindo a Outloop como operadora dos dados, com confidencialidade, medidas de segurança e regras claras sobre o que pode e o que não pode ser feito com as informações dos seus clientes. Os dados são da sua empresa; a Outloop só os trata para fazer o sistema funcionar.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. CTA FINAL ============ -->
+  <section class="section cta-final">
+    <div class="container">
+      <h2>Quantas horas por semana sua empresa perde com tarefa manual?</h2>
+      <p>No diagnóstico gratuito de 30 minutos, a gente mede — com os seus números, não com estatística de internet. Você descobre onde estão as suas horas perdidas e sai com um plano por escrito para recuperá-las. Sem compromisso. Sem tecniquês. Direto com quem constrói.</p>
+      <a class="btn" data-wa data-origem="lp-final" data-secao="cta_final"
+         data-msg="Olá, Pedro! Vi o site da Outloop e quero o diagnóstico gratuito de automação.">
+        Chamar a Outloop no WhatsApp
+      </a>
+      <p class="microcopy">Resposta rápida em horário comercial. Atendemos Ribeirão Preto e região.</p>
+
+      <!-- Formulário fallback: só aparece se OUTLOOP_CONFIG.formEndpoint estiver preenchido -->
+      <div class="form-wrap" id="form-fallback">
+        <h3>Prefere que a gente chame você?</h3>
+        <form id="lead-form">
+          <label for="f-nome">Nome</label>
+          <input type="text" id="f-nome" name="nome" required>
+          <label for="f-zap">WhatsApp</label>
+          <input type="tel" id="f-zap" name="whatsapp" placeholder="(16) 9XXXX-XXXX" required>
+          <label for="f-dor">Qual tarefa mais rouba seu tempo hoje?</label>
+          <select id="f-dor" name="dor" required>
+            <option value="">Selecione...</option>
+            <option>Atendimento no WhatsApp</option>
+            <option>Agendamentos e confirmações</option>
+            <option>Planilhas e relatórios</option>
+            <option>Cobranças</option>
+            <option>Preciso de um site</option>
+            <option>Preciso de um sistema</option>
+            <option>Outro</option>
+          </select>
+          <button type="submit" class="btn">Receber contato da Outloop</button>
+          <p class="form-msg" id="form-msg">Recebido! O Pedro vai te chamar no WhatsApp ainda hoje (em horário comercial, em poucos minutos).</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="logo" aria-hidden="true">
+      <svg width="24" height="14" viewBox="0 0 30 18" fill="none">
+        <path d="M8 2 C3 2 2 6 2 9 C2 12 3 16 8 16 C13 16 15 11 15 9 C15 7 17 2 22 2 C27 2 28 6 28 9 C28 12 27 16 22 16 C18.5 16 16.8 13.5 16 11.5" stroke="#2EE6A0" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      outloop
+    </span>
+    <p>Outloop · CNPJ [00.000.000/0001-00] · Ribeirão Preto - SP</p><!-- TODO: preencher CNPJ real -->
+    <p><a href="privacidade.html">Política de Privacidade</a></p>
+    <!-- TODO: descomentar quando o Instagram estiver ativo
+    <p><a href="https://instagram.com/SEUINSTAGRAM" rel="noopener" target="_blank">Instagram</a></p>
+    -->
+  </footer>
+
+  <!-- Botão flutuante (aparece após rolar o hero) -->
+  <a class="float-wa" id="float-wa" data-wa data-origem="lp-flutuante" data-secao="flutuante"
+     data-msg="Olá, Pedro! Vi o site da Outloop e quero o diagnóstico gratuito de automação.">
+    💬 Diagnóstico gratuito
+  </a>
+
+  <script>
+    /* ================================================================
+       CONFIGURAÇÃO — preencher antes de publicar (ver site/README.md)
+    ================================================================ */
+    const OUTLOOP_CONFIG = {
+      // Número do WhatsApp comercial com DDI+DDD, só dígitos. Ex.: "5516991234567"
+      whatsappNumber: "55SEUNUMERO",
+      // Opcional: endpoint de formulário (ex.: Formspree "https://formspree.io/f/xxxx").
+      // Vazio = o formulário fica oculto e a página segue 100% WhatsApp (recomendado no início).
+      formEndpoint: ""
+    };
+
+    /* ===== Monta todos os links de WhatsApp (mensagem + token de origem) ===== */
+    document.querySelectorAll("[data-wa]").forEach(el => {
+      const msg = `${el.dataset.msg} #${el.dataset.origem}`;
+      el.href = `https://wa.me/${OUTLOOP_CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+      el.target = "_blank";
+      el.rel = "noopener";
+      // Evento Contact (Meta Pixel) em todo clique de WhatsApp — é o evento de otimização das campanhas
+      el.addEventListener("click", () => {
+        if (typeof fbq === "function") fbq("track", "Contact", { content_name: el.dataset.secao });
+        if (typeof gtag === "function") gtag("event", "whatsapp_click", { secao: el.dataset.secao });
+        if (window.dataLayer) window.dataLayer.push({ event: "whatsapp_click", secao: el.dataset.secao });
+      });
+    });
+
+    /* ===== Botão flutuante: aparece depois que o hero sai da tela ===== */
+    const floatBtn = document.getElementById("float-wa");
+    new IntersectionObserver(entries => {
+      floatBtn.classList.toggle("visivel", !entries[0].isIntersecting);
+    }, { threshold: 0.1 }).observe(document.getElementById("hero"));
+
+    /* ===== Formulário fallback (só ativa com endpoint configurado) ===== */
+    if (OUTLOOP_CONFIG.formEndpoint) {
+      document.getElementById("form-fallback").classList.add("ativo");
+      document.getElementById("lead-form").addEventListener("submit", async e => {
+        e.preventDefault();
+        const form = e.target;
+        try {
+          const resp = await fetch(OUTLOOP_CONFIG.formEndpoint, {
+            method: "POST",
+            headers: { "Accept": "application/json" },
+            body: new FormData(form)
+          });
+          if (!resp.ok) throw new Error();
+          form.reset();
+          document.getElementById("form-msg").style.display = "block";
+          if (typeof fbq === "function") fbq("track", "Lead");
+          if (window.dataLayer) window.dataLayer.push({ event: "lead_form" });
+        } catch {
+          alert("Não foi possível enviar agora. Chame a gente direto no WhatsApp!");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

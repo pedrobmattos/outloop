@@ -25,7 +25,17 @@ Anúncio (Meta CTWA + Google Search) → Landing page ou WhatsApp direto → Qua
 | [05 — Tráfego Pago](docs/05-trafego-pago.md) | Campanhas Meta e Google prontas: públicos, orçamento, 7 copies de anúncio, rotina de gestão | Montar e gerir as campanhas |
 | [06 — Criativos SuperGrok](docs/06-criativos-supergrok.md) | 12 prompts de imagem + 6 de vídeo prontos para o Grok Imagine, overlays e CTAs | Gerar os criativos |
 | [07 — Vendas e Atendimento](docs/07-vendas-e-atendimento.md) | Scripts de WhatsApp, roteiro do diagnóstico, proposta, follow-up, CRM | Atender e fechar leads |
-| [08 — Formalização](docs/08-formalizacao.md) | MEI vs ME, CNAE, Simples Nacional, NFS-e em Ribeirão Preto, contrato | Abrir a empresa e assinar contratos |
+| [08 — Formalização](docs/08-formalizacao.md) | MEI vs ME, CNAE, Simples Nacional, NFS-e em Ribeirão Preto, contrato | Referência fiscal/legal (empresa já aberta ✔) |
+
+## Prontos para usar
+
+| Pasta/arquivo | O que é |
+|---|---|
+| [`site/`](site/) | **Landing page da campanha construída em código** (HTML/CSS/JS, zero dependências) + política de privacidade + [guia de publicação](site/README.md) com checklist de placeholders |
+| [`operacional/whatsapp-kit.md`](operacional/whatsapp-kit.md) | Kit copia-e-cola do WhatsApp Business: saudação, respostas rápidas, script de qualificação, 8 objeções, follow-up, etiquetas |
+| [`operacional/proposta-modelo.md`](operacional/proposta-modelo.md) | Template de proposta comercial (1–2 páginas) com anexo interno de preços |
+| [`operacional/contrato-modelo.md`](operacional/contrato-modelo.md) | Minuta de contrato completa + Anexo de Escopo (⚠️ revisar com advogado antes do 1º uso) |
+| [`operacional/crm-pipeline.csv`](operacional/crm-pipeline.csv) | Planilha de CRM com o pipeline canônico, pronta para importar no Google Sheets |
 
 ## Regras de consistência
 
@@ -37,8 +47,7 @@ Anúncio (Meta CTWA + Google Search) → Landing page ou WhatsApp direto → Qua
 
 ## Primeiros passos
 
-1. Abra o [doc 03 (Tasklist)](docs/03-tasklist.md) e execute a seção **"Esta semana"**.
-2. Formalize a empresa seguindo o [doc 08](docs/08-formalizacao.md).
-3. Construa a landing com a copy do [doc 04](docs/04-landing-page.md).
-4. Gere os criativos com os prompts do [doc 06](docs/06-criativos-supergrok.md).
-5. Publique as campanhas do [doc 05](docs/05-trafego-pago.md) e atenda com os scripts do [doc 07](docs/07-vendas-e-atendimento.md).
+1. Abra o [doc 03 (Tasklist)](docs/03-tasklist.md) e execute a seção **"Esta semana"** (empresa já aberta — começa pelo WhatsApp Business, com o [kit pronto](operacional/whatsapp-kit.md)).
+2. Publique a [landing page pronta](site/README.md): preencher placeholders → Vercel → domínio.
+3. Gere os criativos com os prompts do [doc 06](docs/06-criativos-supergrok.md).
+4. Publique as campanhas do [doc 05](docs/05-trafego-pago.md) e atenda com os scripts do [doc 07](docs/07-vendas-e-atendimento.md).
