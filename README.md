@@ -35,6 +35,7 @@ Anúncio (Meta CTWA + Google Search) → Landing page ou WhatsApp direto → Qua
 | [`operacional/whatsapp-kit.md`](operacional/whatsapp-kit.md) | Kit copia-e-cola do WhatsApp Business: saudação, respostas rápidas, script de qualificação, 8 objeções, follow-up, etiquetas |
 | [`operacional/proposta-modelo.md`](operacional/proposta-modelo.md) | Template de proposta comercial (1–2 páginas) com anexo interno de preços |
 | [`operacional/contrato-modelo.md`](operacional/contrato-modelo.md) | Minuta de contrato completa + Anexo de Escopo (⚠️ revisar com advogado antes do 1º uso) |
+| [`operacional/prompts-grok.md`](operacional/prompts-grok.md) | Os 18 prompts do SuperGrok enxutos (só o prompt + headline + CTA), prontos para copiar um a um |
 | [`operacional/crm-pipeline.csv`](operacional/crm-pipeline.csv) | Planilha de CRM com o pipeline canônico, pronta para importar no Google Sheets |
 
 ## Regras de consistência
