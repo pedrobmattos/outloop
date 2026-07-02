@@ -53,7 +53,7 @@ Checklist mestre de lançamento da Outloop (estúdio de tecnologia — automaç�
 - [ ] Preencher o perfil comercial completo: nome, descrição ("Automação, sites e sistemas para PMEs de Ribeirão Preto"), endereço/região, horário e link do site.
 - [ ] Configurar **mensagem de saudação automática** com a primeira pergunta de qualificação embutida (assim nenhum lead fica sem resposta imediata, mesmo fora do teclado).
 - [ ] Criar 6 **respostas rápidas**: /diagnostico (o que é e como agendar), /servicos (3 linhas de serviço), /precos (faixas e "depende do escopo — o diagnóstico define"), /cases (links do portfólio), /proposta (próximos passos), /obrigado (pós-reunião).
-- [ ] Criar **etiquetas** de funil: Novo lead, Qualificando, Diagnóstico agendado, Proposta enviada, Cliente, Perdido/futuro.
+- [ ] Criar **etiquetas** de funil espelhando o pipeline canônico do CRM: Lead novo, Qualificado, Diagnóstico agendado, Diagnóstico feito, Proposta enviada, Fechado, Perdido, Indicação/Parceiro.
 - [ ] Gerar links **wa.me distintos por canal** (site, landing, Instagram, Google Business, prospecção) com mensagens pré-preenchidas diferentes, para atribuir origem de cada lead.
 
 **Critério de saída da Fase 0:** empresa em abertura, contrato-modelo v1.0 salvo, WhatsApp pronto para receber lead hoje.
