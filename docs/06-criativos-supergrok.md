@@ -129,7 +129,7 @@ Conceptual studio photograph, dozens of identical yellow sticky notes and repeat
 - **Headline:** "Pare com tarefas repetitivas."
 - **Apoio:** "Um fluxo automático resolve o que hoje toma sua semana."
 - **CTA:** Enviar mensagem (Campanha 1 — Click-to-WhatsApp)
-- **Formato:** 1:1 (bom para retargeting)
+- **Formato:** 1:1 (bom para retargeting — nesse uso, botão "Fale conosco", Campanha 3)
 
 **IMG-08 — Recepcionista confirmando consulta uma a uma** *(nicho: clínicas)*
 > O que é: a dor específica da clínica — recepcionista ao telefone, agenda de papel aberta, fila de pacientes esperando. Contraponto do IMG-01.
@@ -233,7 +233,7 @@ Animate this scene as a time-lapse: the Brazilian business owner keeps typing at
 ```
 
 - **Duração alvo:** 12s | **Gancho:** luz do dia "correndo" na janela
-- **Texto sobreposto:** 0–3s "Quantas horas por semana você perde nisso?" → 4–8s "PMEs perdem ~14h/semana em tarefa repetitiva" → 9–12s "Pare. Automatize." + CTA
+- **Texto sobreposto:** 0–3s "Quantas horas por semana você perde nisso?" → 4–8s "Sua semana tem horas demais no manual." → 9–12s "Pare. Automatize." + CTA
 - **CTA:** Enviar mensagem (Campanha 1 — Click-to-WhatsApp)
 
 **VID-04 — Loop infinito de post-its quebrado pelo fluxo verde** *(base: IMG-07 em 9:16)*
@@ -271,7 +271,7 @@ Cinematic vertical video: close-up of a Brazilian hand holding a smartphone agai
 - **Texto sobreposto:** 0–3s "Seu site hoje" → no swipe: "Seu site com a Outloop" → 5–7s CTA
 - **CTA:** "Saiba mais" ou "Fale conosco" (Campanha 2 — landing page)
 
-> **Complemento recomendado (fora do Grok):** gravar 2–3 vídeos do próprio Pedro falando à câmera (celular, 9:16, 10–15s, gancho de dor nos 3 primeiros segundos) — pela pesquisa, estilo autêntico "dono/especialista" supera produção polida em 20–30% de engajamento. Os vídeos de IA acima são o volume; o rosto do fundador é a conversão.
+> **Complemento recomendado (fora do Grok):** gravar 2–3 vídeos do próprio Pedro falando à câmera (celular, 9:16, 10–15s, gancho de dor nos 3 primeiros segundos) — pela pesquisa, estilo autêntico "dono/especialista" tende a superar produção polida em engajamento (estimativa de mercado na faixa de 20–30%, não uma métrica garantida). Os vídeos de IA acima são o volume; o rosto do fundador é a conversão.
 
 ---
 
@@ -279,28 +279,29 @@ Cinematic vertical video: close-up of a Brazilian hand holding a smartphone agai
 
 | ID | Ângulo | Nicho/uso | Headline | CTA |
 |---|---|---|---|---|
-| IMG-01 | Automatize | Clínicas | Sua clínica respondendo em segundos. 24/7. | Chame no WhatsApp |
-| IMG-02 | Automatize | Imobiliárias | Lead do portal respondido em menos de 1 minuto. | Fale com um especialista |
-| IMG-03 | Automatize | Geral (conceitual) | Automatize sua empresa. | Agende um diagnóstico gratuito |
-| IMG-04 | Automatize | Comércio local | Sua empresa funcionando, mesmo quando você não está. | Chame no WhatsApp |
-| IMG-05 | Tarefas repetitivas | Geral (dor) | Quantas horas da sua semana morrem em planilha? | Agende um diagnóstico gratuito |
-| IMG-06 | Tarefas repetitivas | Advocacia/contábil | Cobrar documento de cliente não é trabalho de advogado. | Chame no WhatsApp |
-| IMG-07 | Tarefas repetitivas | Geral (conceitual) | Pare com tarefas repetitivas. | Agende um diagnóstico gratuito |
-| IMG-08 | Tarefas repetitivas | Clínicas | Confirmar consulta uma por uma? Em 2026? | Chame no WhatsApp |
-| IMG-09 | Site/sistema dos sonhos | Sites | Tenha o site dos seus sonhos. | Peça seu orçamento sem compromisso |
-| IMG-10 | Site/sistema dos sonhos | Clínicas/estética | A cara da sua clínica, finalmente à altura do seu trabalho. | Peça seu orçamento sem compromisso |
-| IMG-11 | Site/sistema dos sonhos | Sistemas/CRM | Um sistema do jeito que a SUA empresa trabalha. | Fale com um especialista |
-| IMG-12 | Site/sistema dos sonhos | Sites (conceitual) | Seu site hoje ⟶ Seu site com a Outloop. | Peça seu orçamento sem compromisso |
-| VID-01 | Automatize | Clínicas | Sua clínica respondendo em segundos | Chame no WhatsApp |
-| VID-02 | Automatize | Geral | Sua operação com a Outloop | Agende um diagnóstico gratuito |
-| VID-03 | Tarefas repetitivas | Geral (dor) | Quantas horas por semana você perde nisso? | Agende um diagnóstico gratuito |
-| VID-04 | Tarefas repetitivas | Geral (conceitual) | Tarefa repetitiva não acaba sozinha. | Chame no WhatsApp |
-| VID-05 | Site/sistema dos sonhos | Sites | O site dos seus sonhos | Peça seu orçamento sem compromisso |
-| VID-06 | Site/sistema dos sonhos | Sites | Seu site hoje → com a Outloop | Peça seu orçamento sem compromisso |
+| IMG-01 | Automatize | Clínicas | Sua clínica respondendo em segundos. 24/7. | Enviar mensagem (Campanha 1) |
+| IMG-02 | Automatize | Imobiliárias | Lead do portal respondido em menos de 1 minuto. | Enviar mensagem (Anúncio 7, Campanha 1) |
+| IMG-03 | Automatize | Geral (conceitual) | Automatize sua empresa. | Enviar mensagem (Campanha 1) |
+| IMG-04 | Automatize | Comércio local | Sua empresa funcionando, mesmo quando você não está. | Enviar mensagem (Campanha 1) |
+| IMG-05 | Tarefas repetitivas | Geral (dor) | Quantas horas da sua semana morrem em planilha? | Enviar mensagem (Campanha 1) |
+| IMG-06 | Tarefas repetitivas | Advocacia/contábil | Cobrar documento de cliente não é trabalho de advogado. | Enviar mensagem (Campanha 1) |
+| IMG-07 | Tarefas repetitivas | Geral (conceitual) | Pare com tarefas repetitivas. | Enviar mensagem (Campanha 1); retargeting: Fale conosco (Campanha 3) |
+| IMG-08 | Tarefas repetitivas | Clínicas | Confirmar consulta uma por uma? Em 2026? | Enviar mensagem (Campanha 1) |
+| IMG-09 | Site/sistema dos sonhos | Sites | Tenha o site dos seus sonhos. | Saiba mais / Fale conosco (Campanha 2) |
+| IMG-10 | Site/sistema dos sonhos | Clínicas/estética | A cara da sua clínica, finalmente à altura do seu trabalho. | Saiba mais / Fale conosco (Campanha 2) |
+| IMG-11 | Site/sistema dos sonhos | Sistemas/CRM | Um sistema do jeito que a SUA empresa trabalha. | Saiba mais / Fale conosco (Campanha 2) |
+| IMG-12 | Site/sistema dos sonhos | Sites (conceitual) | Seu site hoje ⟶ Seu site com a Outloop. | Saiba mais / Fale conosco (Campanha 2) |
+| VID-01 | Automatize | Clínicas | Sua clínica respondendo em segundos | Enviar mensagem (Campanha 1) |
+| VID-02 | Automatize | Geral | Sua operação com a Outloop | Enviar mensagem (Campanha 1) |
+| VID-03 | Tarefas repetitivas | Geral (dor) | Quantas horas por semana você perde nisso? | Enviar mensagem (Campanha 1) |
+| VID-04 | Tarefas repetitivas | Geral (conceitual) | Tarefa repetitiva não acaba sozinha. | Enviar mensagem (Campanha 1) |
+| VID-05 | Site/sistema dos sonhos | Sites | O site dos seus sonhos | Saiba mais / Fale conosco (Campanha 2) |
+| VID-06 | Site/sistema dos sonhos | Sites | Seu site hoje → com a Outloop | Saiba mais / Fale conosco (Campanha 2) |
 
-Observações de uso:
-- Anúncios com CTA "Chame no WhatsApp" → campanha **Click-to-WhatsApp** com mensagem pré-preenchida ("Quero o diagnóstico gratuito de automação").
-- Anúncios com CTA "Agende um diagnóstico gratuito" / "Peça seu orçamento" → landing page da Outloop com botão de WhatsApp acima da dobra.
+Observações de uso (botões reais do Meta Ads, conforme docs/05-trafego-pago.md):
+- Criativos de automação/tarefas repetitivas → **Campanha 1 Click-to-WhatsApp**, botão "Enviar mensagem", com mensagem pré-preenchida ("Quero o diagnóstico gratuito de automação"). Automação NÃO passa por landing page: é CTWA direto para o WhatsApp.
+- Criativos de sites/sistemas sob medida ("site e sistema dos seus sonhos") → **Campanha 2** (tráfego para landing page da Outloop com botão de WhatsApp acima da dobra), botões "Saiba mais" ou "Fale conosco".
+- Criativos/variações de retargeting → **Campanha 3** (remarketing), botão "Fale conosco".
 - Nunca prometer resultado absoluto na headline (nada de "dobre seu faturamento"); manter promessas de processo, como nas headlines acima.
 - Para adaptar um prompt a outro nicho, troque apenas o cenário e a profissão (ex.: em IMG-06, "lawyer" → "accountant"; em IMG-01, "dental clinic" → "aesthetic clinic") e mantenha luz, paleta e composição.
 

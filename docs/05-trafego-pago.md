@@ -50,7 +50,7 @@ Taxas usadas (pesquisa de funil B2B BR): conversa → reunião de diagnóstico *
 - Google R$ 1.500 ÷ CPC R$ 5 = ~300 cliques × 6% = **~18 leads**
 - Total ~88 leads → 25% reunião = **~22 diagnósticos/mês** → 20% fecham = **~4 clientes/mês**
 
-**Sanidade econômica:** com ticket de automação em R$ 4.000–12.000 de setup + R$ 500–1.500/mês de mensalidade, **1 cliente/mês já paga 2–4x o investimento em tráfego**. CAC alvo: ≤ R$ 1.500 por cliente (investimento mensal ÷ clientes fechados).
+**Sanidade econômica:** com ticket de automação em R$ 2.500–10.000 de setup + R$ 400–1.400/mês de mensalidade (Essencial R$ 2.500 + R$ 400/mês; Operação R$ 6.000 + R$ 800/mês; Escala R$ 10.000 + R$ 1.400/mês), **1 cliente/mês já paga 2–4x o investimento em tráfego**. CAC alvo: ≤ R$ 1.500 por cliente (investimento mensal ÷ clientes fechados).
 
 ---
 
@@ -62,7 +62,7 @@ Configuração geral da conta: Pixel + API de Conversões instalados antes do pr
 
 - **Objetivo:** Engajamento → Apps de mensagem → WhatsApp (conta WhatsApp Business conectada à página).
 - **Otimização:** conversas iniciadas.
-- **Orçamento:** CBO (orçamento no nível da campanha) **R$ 50–70/dia**, distribuído entre 2 conjuntos.
+- **Orçamento:** CBO (orçamento no nível da campanha) **R$ 50–70/dia**, distribuído entre os conjuntos (1A–1C).
 - **Veiculação:** o dia todo (com resposta automática configurada no WhatsApp para fora do horário comercial). Se não houver automação de resposta ainda, restringir a 7h–21h.
 
 **Conjunto 1A — Clínicas e saúde (aposta principal)**
@@ -80,6 +80,14 @@ Configuração geral da conta: Pixel + API de Conversões instalados antes do pr
 - Posicionamentos: Advantage+ (automático).
 - Orçamento efetivo esperado: ~R$ 20–30/dia via CBO.
 - Anúncios: Anúncios 2, 3 e 4 (comércio local, advocacia, tarefas repetitivas).
+
+**Conjunto 1C — Imobiliárias (resposta a leads de portais)**
+- Localização: Ribeirão Preto + raio de 40 km.
+- Idade: 25–55. Gênero: todos.
+- Advantage+ Audience: **ligado**, sinais: *Mercado imobiliário, Corretor de imóveis, Imobiliárias, Pequenas e médias empresas, Empreendedorismo* + administradores de página.
+- Posicionamentos: Advantage+ (automático).
+- Orçamento efetivo esperado: ~R$ 10–20/dia via CBO (se a verba não comportar os 3 conjuntos, alternar quinzenalmente com o 1B).
+- Anúncios: Anúncio 7 (lead de portal em 1 minuto) + criativo IMG-02 do docs/06-criativos-supergrok.md.
 
 > Nota: segmentação B2B por interesse no Meta é imprecisa por natureza. O filtro real acontece no criativo (a copy "fala com dono de empresa" e afasta consumidor final) e na qualificação do WhatsApp. Por isso Advantage+ ligado + copy nichada é a combinação recomendada.
 
@@ -107,9 +115,9 @@ Configuração geral da conta: Pixel + API de Conversões instalados antes do pr
 
 ---
 
-## 3. Anúncios — 6 copies completas
+## 3. Anúncios — 7 copies completas
 
-Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; sem jargão técnico; promessa de processo (nunca de faturamento); prova local (Ribeirão Preto); um único CTA por anúncio; oferta de valor (diagnóstico gratuito) em vez de venda direta — isso reduz CPL em 40–60% vs pedir a venda no anúncio. Manter 3–5 criativos ativos por conjunto (estas 6 copies + variações de imagem/vídeo do Grok Imagine).
+Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; sem jargão técnico; promessa de processo (nunca de faturamento); prova local (Ribeirão Preto); um único CTA por anúncio; oferta de valor (diagnóstico gratuito) em vez de venda direta — estimativa de mercado aponta redução de 40–60% no CPL vs pedir a venda no anúncio (validar com dados próprios). Manter 3–5 criativos ativos por conjunto (estas 7 copies + variações de imagem/vídeo do Grok Imagine).
 
 ### Ângulo 1 — "Automatize sua empresa"
 
@@ -152,6 +160,30 @@ Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; 
 > **Título:** Automatize sua empresa
 > **Descrição:** Atenda em segundos, 24/7
 > **CTA:** Enviar mensagem
+
+**Anúncio 7 — Imobiliárias (Campanha 1, Conjunto 1C) — CTA do botão: Enviar mensagem**
+
+> **Texto principal:**
+> O lead do portal esperou 2 horas. O concorrente respondeu em 1 minuto.
+>
+> Adivinha com quem o cliente agendou a visita?
+>
+> No mercado imobiliário, lead de portal esfria em minutos — e a sua equipe não consegue estar no celular o dia inteiro.
+>
+> A Outloop monta para a sua imobiliária o pacote **Lead em 1 Minuto**:
+> — Resposta automática a leads de portais em menos de 1 minuto, 24/7
+> — Qualificação no WhatsApp com IA: imóvel, faixa de preço e urgência antes de chegar ao corretor
+> — Follow-up automático para o lead que sumiu
+>
+> Estúdio de tecnologia de Ribeirão Preto. O primeiro passo é um Diagnóstico Gratuito de Automação (30 min): mapeamos onde sua imobiliária perde lead e você sai com um plano — feche ou não com a gente.
+>
+> Toque no botão e chame no WhatsApp.
+>
+> **Título:** Lead do portal em 1 minuto
+> **Descrição:** Diagnóstico gratuito de 30 min
+> **CTA:** Enviar mensagem
+
+*(Criativo correspondente: IMG-02 do docs/06-criativos-supergrok.md — corretor com lead de portal respondido na hora.)*
 
 ### Ângulo 2 — "Pare com tarefas repetitivas"
 
@@ -237,7 +269,7 @@ Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; 
 > **Descrição:** Sob medida para sua operação
 > **CTA:** Fale conosco
 
-> **Nota de produção:** para cada copy, gerar no Grok Imagine 1 imagem estática 1:1 e 1 vídeo 9:16 de 6–15s. No vídeo, o gancho de dor precisa aparecer nos 3 primeiros segundos (texto na tela). Vídeo curto vertical supera estático em 20–30% de engajamento. Emojis moderados podem ser adicionados na publicação (setas e checks), mantendo o texto acima como base.
+> **Nota de produção:** para cada copy, gerar no Grok Imagine 1 imagem estática 1:1 e 1 vídeo 9:16 de 6–15s. No vídeo, o gancho de dor precisa aparecer nos 3 primeiros segundos (texto na tela). Vídeo curto vertical tende a superar o estático em engajamento (estimativa de mercado: 20–30%; validar com dados próprios). Emojis moderados podem ser adicionados na publicação (setas e checks), mantendo o texto acima como base.
 
 ---
 
@@ -264,10 +296,10 @@ Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; 
 - `"fazer site para minha empresa"`
 
 **RSA 1:**
-- Headlines (máx. 30 caracteres): Criação de Sites Profissionais | Site Para Sua Empresa | Sites em Ribeirão Preto | Entrega Rápida, Preço Fechado | Feito Para Celular e Google | Orçamento em 24h | Fale Direto Com o Dev | Peça Seu Orçamento Grátis
+- Headlines (máx. 30 caracteres): Criação de Sites Profissionais | Site Para Sua Empresa | Sites em Ribeirão Preto | Entrega Rápida, Preço Fechado | Feito Para Celular e Google | Proposta em Até 48h | Fale Direto Com o Dev | Peça Seu Orçamento Grátis
 - Descriptions (máx. 90 caracteres):
   - Sites profissionais para empresas de Ribeirão Preto e região. Projeto e preço fechados.
-  - Rápido, bonito e feito para celular. Manutenção mensal opcional. Peça um orçamento em 24h.
+  - Rápido, bonito e feito para celular. Manutenção mensal opcional. Proposta em até 48h.
   - Fale direto com quem desenvolve, sem intermediário. Atendimento local pelo WhatsApp.
   - Tenha o site dos seus sonhos sem dor de cabeça: escopo claro e entrega em semanas.
 
@@ -322,7 +354,7 @@ Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; 
 > Atenção: "sistema para clínica" é disputado por SaaS estabelecidos (iClinic, Shosp). Manter em frase, monitorar CPC e pausar se estourar R$ 15 sem lead.
 
 **RSA 1:**
-- Headlines: Sistema Sob Medida | Software Para Sua Empresa | CRM Simples e Sob Medida | Feito em Ribeirão Preto | Escopo e Preço Fechados | Dashboards e Portais | Sistema do Seu Jeito | Orçamento em 24h
+- Headlines: Sistema Sob Medida | Software Para Sua Empresa | CRM Simples e Sob Medida | Feito em Ribeirão Preto | Escopo e Preço Fechados | Dashboards e Portais | Sistema do Seu Jeito | Diagnóstico Grátis de 30 min
 - Descriptions:
   - Sistema pronto não encaixa? Construímos sob medida para o processo da sua empresa.
   - CRM simples, dashboards e portais internos. Escopo e preço fechados antes de começar.
@@ -334,7 +366,7 @@ Regras aplicadas: dor concreta do dono de PME nos 3 primeiros segundos/linha 1; 
 - Descriptions:
   - Sua operação roda em planilhas soltas? Centralize tudo em um sistema feito para você.
   - Agenda, clientes e números do negócio em uma tela só. Desenvolvido em Ribeirão Preto.
-  - Conte o que você precisa e receba proposta com escopo, prazo e preço em até 48h.
+  - Proposta com escopo, prazo e preço em até 48h após o diagnóstico gratuito de 30 min.
   - Sob medida sem preço de software house: solução enxuta para PME, com suporte contínuo.
 
 ### Palavras-chave negativas (nível campanha)
@@ -394,12 +426,12 @@ Revisar o relatório de termos de pesquisa semanalmente e negativar tudo que nã
 |---|---|---|
 | CPM Meta (feed) | R$ 8–35 | investigar acima de R$ 50 |
 | CTR Meta | ≥ 1% (ótimo ≥ 1,5%) | < 0,7% = trocar criativo |
-| CPL Meta (conversa iniciada) | R$ 25–45 | teto R$ 60 |
+| CPL Meta (conversa iniciada) | R$ 25–45 | teto de ação R$ 60 (pausar anúncio/trocar criativo); CPL > R$ 80 sustentado = gatilho estratégico de revisão de oferta/canal |
 | CTR Google Search | ≥ 4–5% | < 3% = revisar anúncio/termos |
 | CPC Google | dentro das faixas por grupo (R$ 3–15) | acima do teto = revisar lances |
 | CPL Google (lead de LP/WhatsApp) | R$ 40–80 | teto R$ 120 |
 | Custo por reunião de diagnóstico | ≤ R$ 200–300 | acima de R$ 400 = vazamento no funil |
-| CAC (custo por cliente fechado) | ≤ R$ 1.500 | referência: setup médio R$ 4–12 mil |
+| CAC (custo por cliente fechado) | ≤ R$ 1.500 | referência: setup de automação R$ 2.500–10.000 (sistemas R$ 8–35 mil) |
 
 ---
 
@@ -454,7 +486,7 @@ Começar com planilha estruturada (ou HubSpot CRM gratuito) com uma linha por le
 | Nome / empresa | Dra. Ana / Clínica X |
 | Origem (código/UTM) | CL1 — Meta CTWA clínicas |
 | Nicho | Clínica |
-| Status | Novo → Em conversa → Diagnóstico marcado → Diagnóstico feito → Proposta → **Fechado** / Perdido |
+| Status | Lead novo → Qualificado → Diagnóstico agendado → Diagnóstico feito → Proposta enviada → **Fechado** / Perdido (+ etiqueta "Indicação/Parceiro" quando aplicável) |
 | Motivo da perda | preço / sumiu / sem fit |
 | Valor (setup + mensalidade) | R$ 6.000 + R$ 800/mês |
 

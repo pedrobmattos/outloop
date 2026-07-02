@@ -48,8 +48,8 @@ Por que assim: apresenta a empresa em 1 linha, promete resposta humana e já dis
 > O **Diagnóstico Gratuito de Automação** funciona assim:
 >
 > 1. Conversa de 30 minutos (vídeo ou presencial, se você estiver em Ribeirão e região).
-> 2. Mapeamos juntos os 2–3 processos que mais consomem tempo na sua operação.
-> 3. Você recebe em até 24h um resumo em PDF com o plano de automação, estimativa de horas economizadas e proposta com escopo, prazo e investimento.
+> 2. Mapeamos juntos os 3 maiores gargalos da sua operação.
+> 3. Você recebe em até 48h um resumo em PDF com o plano de automação, estimativa de horas economizadas e proposta com escopo, prazo e investimento.
 >
 > Sem compromisso e sem enrolação: se automação não fizer sentido pro seu caso, eu falo isso na reunião.
 >
@@ -77,12 +77,13 @@ Espelham o pipeline do CRM (seção 7). Toda conversa recebe etiqueta na hora:
 1. `01 Lead novo` — chegou e ainda não foi qualificado
 2. `02 Qualificado` — respondeu as perguntas, tem fit
 3. `03 Diagnóstico agendado` — reunião marcada
-4. `04 Proposta enviada` — aguardando decisão
-5. `05 Cliente` — fechou
-6. `06 Perdido` — descartado ou sumiu após cadência completa
-7. `07 Indicação/Parceiro` — contadores, agências, parceiros de indicação
+4. `04 Diagnóstico feito` — reunião realizada, proposta em preparação
+5. `05 Proposta enviada` — aguardando decisão
+6. `06 Fechado` — virou cliente
+7. `07 Perdido` — descartado ou sumiu após cadência completa
+8. `08 Indicação/Parceiro` — contadores, agências, parceiros de indicação
 
-Rotina diária (10 min, fim do dia): revisar `01` (ninguém sem resposta), `03` (confirmar reuniões de amanhã) e `04` (quem entrou na cadência de follow-up hoje).
+Rotina diária (10 min, fim do dia): revisar `01` (ninguém sem resposta), `03` (confirmar reuniões de amanhã) e `05` (quem entrou na cadência de follow-up hoje).
 
 ---
 
@@ -120,7 +121,7 @@ Fazer em conversa natural, uma de cada vez, reagindo ao que o lead responde. Met
 |---|---|
 | Nicho prioritário (clínica, advocacia/contábil, imobiliária, comércio local), 2+ pessoas, dor clara, quer resolver agora | **Quente** — convidar para o diagnóstico na mesma conversa |
 | Dor clara mas "sem pressa" | Convidar para o diagnóstico mesmo assim ("é gratuito e você sai com um plano pronto pra quando decidir") |
-| MEI sozinho sem verba, curioso, quer "só o preço" de algo indefinido | Enviar /precos, deixar a porta aberta, etiquetar `06 Perdido` se não avançar |
+| MEI sozinho sem verba, curioso, quer "só o preço" de algo indefinido | Enviar /precos, deixar a porta aberta, etiquetar `07 Perdido` se não avançar |
 | Pedindo emprego, vendendo serviço, fora da região sem fit | Responder com educação e encerrar |
 
 ### 2.3 Condução para o diagnóstico
@@ -129,7 +130,7 @@ Assim que a dor aparecer (não precisa esperar as 4 perguntas se o lead já se a
 
 > Entendi, [nome]. Esse é exatamente o tipo de coisa que a gente resolve — [1 frase conectando a dor à solução, ex.: "dá pra confirmar consulta automaticamente pelo WhatsApp, sem ninguém digitar nada"].
 >
-> O próximo passo é o nosso **diagnóstico gratuito de 30 minutos**: eu mapeio com você os 2–3 processos que mais tomam tempo aí e te entrego um plano com estimativa de horas economizadas — por escrito, em até 24h depois da conversa. Sem compromisso.
+> O próximo passo é o nosso **diagnóstico gratuito de 30 minutos**: eu mapeio com você os 3 maiores gargalos aí e te entrego um plano com estimativa de horas economizadas — por escrito, em até 48h depois da conversa. Sem compromisso.
 >
 > Tenho **quarta às 10h** ou **quinta às 16h**. Qual funciona melhor pra você?
 
@@ -209,14 +210,14 @@ Formato: Google Meet ou presencial (Ribeirão Preto e região, ~40 km). Presenci
 - Preparar 1 exemplo pronto do nicho dele para mostrar na tela (ex.: fluxo de confirmação de consulta para clínica).
 - Mensagem de confirmação na véspera:
 
-> Oi, [nome]! Confirmando nosso diagnóstico amanhã, **[dia] às [hora]**, por **[Meet/presencial]**. Pra render mais, tenha em mente: (1) as 2 ou 3 tarefas que mais tomam tempo aí, (2) quantas pessoas mexem nelas e (3) as ferramentas que vocês usam hoje (agenda, planilha, sistema). Até amanhã!
+> Oi, [nome]! Confirmando nosso diagnóstico amanhã, **[dia] às [hora]**, por **[Meet/presencial]**. Pra render mais, tenha em mente: (1) as 3 tarefas que mais tomam tempo aí, (2) quantas pessoas mexem nelas e (3) as ferramentas que vocês usam hoje (agenda, planilha, sistema). Até amanhã!
 
 ### 3.2 Minuto a minuto
 
 **0–3 min | Abertura e enquadramento**
 Quebra-gelo curto (1 referência local ajuda: bairro, região). Depois:
 
-> Nosso combinado pros próximos 30 minutos: eu vou te fazer perguntas sobre a operação, a gente vai mapear juntos os 2 ou 3 processos que mais tomam tempo, e eu já te mostro ao vivo como eles ficariam automatizados. No final, você me diz se quer receber a proposta — que eu mando por escrito em até 24h, com escopo, prazo e valor. Não vou te empurrar nada hoje. Fechado?
+> Nosso combinado pros próximos 30 minutos: eu vou te fazer perguntas sobre a operação, a gente vai mapear juntos os 3 maiores gargalos, e eu já te mostro ao vivo como eles ficariam automatizados. No final, você me diz se quer receber a proposta — que eu mando por escrito em até 48h, com escopo, prazo e valor. Não vou te empurrar nada hoje. Fechado?
 
 Isso mata a resistência de "reunião de vendas disfarçada" e já semeia o fechamento.
 
@@ -233,12 +234,12 @@ Perguntas de descoberta, adaptando ao nicho:
 
 Anotar **números** sempre que aparecerem (horas, faltas, leads perdidos) — eles viram o argumento da proposta.
 
-**13–22 min | Mapeamento ao vivo dos 2–3 processos automatizáveis**
+**13–22 min | Mapeamento ao vivo dos 3 maiores gargalos automatizáveis**
 Compartilhar tela (ou papel, se presencial) e desenhar com o lead:
 
 > Deixa eu desenhar o que você me contou: [cliente chama no WhatsApp] → [secretária responde quando dá] → [agenda no caderno] → [ninguém confirma] → [20% faltam]. Agora o mesmo fluxo automatizado: [cliente chama] → [atendente IA responde em segundos, 24/7] → [agenda direto] → [confirmação automática 1 dia antes] → [quem não confirma recebe reoferta de horário].
 
-Para cada processo mapeado, verbalizar o trio: **o que muda + horas devolvidas + o que a pessoa passa a fazer com esse tempo**. Priorizar com o lead: "desses 2–3, qual dói mais?" — o escolhido vira a fase 1 da proposta.
+Para cada gargalo mapeado, verbalizar o trio: **o que muda + horas devolvidas + o que a pessoa passa a fazer com esse tempo**. Priorizar com o lead: "desses 3, qual dói mais?" — o escolhido vira a fase 1 da proposta.
 
 Importante (aprendizado do setor): **só prometer automatizar processo que já funciona manualmente**. Se o processo do lead for bagunçado, dizer com franqueza: "antes de automatizar, a gente organiza esse fluxo — isso faz parte da implantação". Isso evita projeto fracassado e justifica o valor do setup.
 
@@ -250,14 +251,14 @@ Deixar o lead reagir. Se surgir objeção, tratar aqui (seção 2.4) — é mais
 
 **27–30 min | Fechamento com compromisso**
 
-> Então o combinado é: **em até 24h você recebe no WhatsApp a proposta em PDF** — o resumo deste diagnóstico, o plano de automação, prazo e investimento, com o valor travado por 15 dias. Você olha com calma e a gente conversa **[dia, D+2] às [hora]** pra eu tirar dúvidas. Pode ser?
+> Então o combinado é: **em até 48h você recebe no WhatsApp a proposta em PDF** — o resumo deste diagnóstico, o plano de automação, prazo e investimento, com o valor travado por 15 dias. Você olha com calma e a gente conversa **[dia, D+2] às [hora]** pra eu tirar dúvidas. Pode ser?
 
 Sempre sair com **data e hora da próxima conversa marcadas**. Proposta sem retorno agendado é proposta que morre na caixa de entrada.
 
 ### 3.3 Depois da reunião (mesmo dia)
 
 - Registrar tudo no CRM (dores, números, processos priorizados, objeções).
-- Montar e enviar a proposta em **até 24h** (template na seção 4) — cumprir esse prazo é parte da demonstração de competência.
+- Montar e enviar a proposta em **até 48h** (template na seção 4) — cumprir esse prazo é parte da demonstração de competência.
 
 ---
 
@@ -302,7 +303,7 @@ Enviar como PDF com identidade visual da Outloop, pelo WhatsApp, com mensagem cu
 > | Item | Valor |
 > |---|---|
 > | Implantação (projeto fechado, Fase 1) | **R$ [valor]** — 50% no aceite, 50% na entrega em produção |
-> | Mensalidade de operação (monitoramento, ajustes, suporte, evolução) | **R$ [valor]/mês**, a partir da virada em produção, sem fidelidade |
+> | Mensalidade de operação (monitoramento, ajustes, suporte, evolução) | **R$ [valor]/mês**, a partir da virada em produção — compromisso mínimo de 3 meses (período de estabilização); depois, cancelamento com aviso de 30 dias, sem multa |
 >
 > Custos variáveis de terceiros (API do WhatsApp/IA, servidor) são repassados de forma transparente — estimativa para seu volume: **R$ [faixa]/mês**.
 >
@@ -380,13 +381,13 @@ Boas práticas: pedir **autorização explícita** de uso de nome/empresa (guard
 
 ### 6.3 Programa de indicação (simples de operar e de explicar)
 
-**Regra:** cliente que indicar uma empresa que **fechar** com a Outloop ganha **1 mensalidade com 50% de desconto por indicação fechada** (clientes só de projeto, sem mensalidade: crédito de R$ 300–500 em serviços/manutenção). Sem limite de indicações; desconto aplicado na fatura seguinte ao fechamento.
+**Regra:** cliente que indicar uma empresa que **fechar** com a Outloop ganha **R$ 500 de crédito em mensalidade por indicação fechada** (clientes só de projeto, sem mensalidade: R$ 500 de crédito em serviços). Sem limite de indicações; crédito aplicado na fatura seguinte ao fechamento.
 
 **Como divulgar (na revisão mensal ou após um resultado bom):**
 
-> Aliás, [nome]: se você conhecer outro [dono de clínica/advogado/imobiliária] penando com [dor], me apresenta? Funciona assim: se a indicação fechar, **sua próxima mensalidade vem com 50% de desconto** — e a pessoa entra direto pro diagnóstico gratuito, sem compromisso. Basta me mandar o contato dela ou encaminhar meu número.
+> Aliás, [nome]: se você conhecer outro [dono de clínica/advogado/imobiliária] penando com [dor], me apresenta? Funciona assim: se a indicação fechar, **você ganha R$ 500 de crédito na sua mensalidade** — e a pessoa entra direto pro diagnóstico gratuito, sem compromisso. Basta me mandar o contato dela ou encaminhar meu número.
 
-**Operação:** registrar o indicador no CRM no campo "origem"; avisar o indicador quando a indicação fechar (e agradecer); aplicar o desconto sem a pessoa precisar cobrar. Canal paralelo: **contadores e agências de marketing como parceiros de indicação recorrente** (etiqueta `07`) — cada contador atende dezenas de PMEs; oferecer a eles a mesma mecânica ou comissão combinada caso a caso.
+**Operação:** registrar o indicador no CRM no campo "origem"; avisar o indicador quando a indicação fechar (e agradecer); aplicar o crédito sem a pessoa precisar cobrar. Canal paralelo: **contadores e agências de marketing como parceiros de indicação recorrente** (etiqueta `08`) — cada contador atende dezenas de PMEs; oferecer a eles a mesma mecânica ou comissão combinada caso a caso.
 
 ---
 
@@ -396,12 +397,13 @@ Boas práticas: pedir **autorização explícita** de uso de nome/empresa (guard
 
 | # | Estágio | Entra quando... | Sai quando... | Ação obrigatória no estágio |
 |---|---|---|---|---|
-| 1 | **Lead** | Primeira mensagem recebida | Respondeu as perguntas de qualificação | Responder em ≤5 min; registrar origem (campanha/UTM) |
+| 1 | **Lead novo** | Primeira mensagem recebida | Respondeu as perguntas de qualificação | Responder em ≤5 min; registrar origem (campanha/UTM) |
 | 2 | **Qualificado** | Tem fit (nicho, tamanho, dor, urgência) | Diagnóstico marcado ou descartado | Oferecer 2 horários para o diagnóstico |
-| 3 | **Diagnóstico agendado** | Data e hora confirmadas | Reunião realizada | Confirmar na véspera; preparar exemplo do nicho |
-| 4 | **Proposta** | Proposta enviada (≤24h após diagnóstico) | Aceite ou fim da cadência D+14 | Conversa de retorno marcada; cadência D+1/3/7/14 |
-| 5a | **Fechado** | Aceite + contrato assinado | — | Kickoff em até 3 dias úteis; iniciar onboarding |
-| 5b | **Perdido** | "Não", sumiço pós-cadência ou sem fit | — | Registrar motivo; agendar toque em ~90 dias se for "momento" |
+| 3 | **Diagnóstico agendado** | Data e hora confirmadas | Reunião realizada (ou no-show) | Confirmar na véspera; preparar exemplo do nicho |
+| 4 | **Diagnóstico feito** | Reunião realizada | Proposta enviada | Registrar dores, números e gargalos priorizados no CRM; montar a proposta (permite medir comparecimento vs. agendado) |
+| 5 | **Proposta enviada** | Proposta enviada (≤48h após diagnóstico) | Aceite ou fim da cadência D+14 | Conversa de retorno marcada; cadência D+1/3/7/14 |
+| 6a | **Fechado** | Aceite + contrato assinado | — | Kickoff em até 3 dias úteis; iniciar onboarding |
+| 6b | **Perdido** | "Não", sumiço pós-cadência ou sem fit | — | Registrar motivo; agendar toque em ~90 dias se for "momento" |
 
 **Métricas a acompanhar desde o dia 1** (referências de mercado para calibrar expectativa): conversas → diagnóstico agendado (referência: 20–40% para inbound bem atendido), diagnóstico → fechamento (referência: 15–25% das oportunidades), CPL por canal e tempo médio de primeira resposta. Regra prática derivada dos benchmarks: **1 cliente novo a cada ~15–40 conversas iniciadas** — planejar verba de anúncio com isso em mente.
 
